@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discover Istanbul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Itim&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Itim&family=Kalam:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <meta name="keywords" content="Istanbul, Turkey, Discover, Travel, Blog, Recommendations">
+    <meta name="description" content="A travel recommendation website explaining the beauty and history of the city of Istanbul, Turkey that includes suggestions for sights,
+    hotels, and food.">
+
+  <style>
+
+    #header{
+      background-image: url('img/discoverIST.jpeg');
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    .typewriter{
+    overflow: hidden;
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .5em; /* Adjust as needed */
+    animation:
+      typing 2.1s steps(40, end),
+
+    }
+
+    #fancy{
+      font-family: 'Kalam', cursive;
+      text-align: left;
+      float: left;
+      font-size: 2.5em;
+      padding-left: 170px;
+      padding-top: 0;
+    }
+    .animateText{
+      text-transform: uppercase;
+      background-image: linear-gradient(
+      -225deg,
+      #9EACAFff 0%,
+      #5D7B82ff 29%,
+      #9F7465ff 67%,
+      #312F2Fff 100% );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 190px;
+    }
+    @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+    #aboutme{
+        background-color: #37505C;
+        height:540px;
+        width:auto;
+        color:#BCC6CC;
+        text-align: right;
+        margin:0;
+
+      }
+      #mypic{
+        width:300px;
+        height:auto;
+        padding-right:75px;
+        float: right;
+        padding-left: 200px;
+      }
+
+
+    #whyistanbul{
+      background-color: #9F7465ff;
+      /*#330000*/
+      height:540px;
+      width: auto;
+      color:#221915;
+      margin:0;
+
+    }
+    iframe {
+      width: 45%;
+      height: 300px;
+      padding-left:75px;
+      border:none;
+      float: left;
+    }
+
+
+
+
+</style>
+  </head>
+
+    <body>
+      <div class="container">
+        <div id="navbar">
+          <div id="nav">
+            <ul>
+              <li><a href="home.html">About</a>
+              <li><a href="history.html">History</a>
+              <li><a href="food.html">Food</a>
+              <li><a href="sights.html">Sights</a>
+              <li><a href="stays.html">Stays</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="header">
+        <div class="typewriter">
+        <h1>DISCOVER ISTANBUL</h1>
+      </div>
+      </div>
+
+        <div id="main">
+
+          <div id="aboutme">
+            <h2>About Me</h2>
+            <div id="fancy" class="animateText">Merhaba! (Hello!)</div>
+
+            <img id="mypic" src="img/mypic1.png" alt="Picture of Web Developer">
+
+            <div class="wrapper">
+
+            <div class="writing">Hello! I'm Helin and I am a third-year undergraduate student double majoring in
+              Data Science and Health & Human Sciences at USC, with a specialization in web development.
+            For the course, ITP 104: Introduction to HTML Web Development, we
+            were given the opportunity to explore our creative interests by developing a website of
+            our choosing for our final project. As someone who visits Istanbul, Turkey
+            nearly every summer to spend time with my grandparents, I consider myself an expert
+            on the best places to visit in the city, and I wanted
+          to share this insight with others. Feel free to explore this website
+          for recommendations on food, stays, and sights to see, as well as learn
+          a bit about what makes Istanbul so special. I hope
+          you can discover why it's one of my favorite cities in the world. Happy traveling!</div>
+          </div>
+        </div>
+          <div id="whyistanbul">
+            <h2>Why Istanbul?</h2>
+            <div>
+            <iframe src="https://www.youtube.com/embed/KwmjJvM_rLs"
+            title="YouTube video player" allowfullscreen></iframe>
+          </div>
+            <div class="wrapper">
+              <div class="writing">
+                Istanbul is famously known as the only transcontinental city in the world, spanning across
+                the Asia and Europe with its beautiful Bosphorous Strait. This city has witnessed the rise and fall
+                of history's greatest empires, as its name has changed from once being the city of Byzantium during the Byzantine Empire's rule, to Constantinople under Roman rule,
+                and Istanbul during the Ottoman Empire. Because of its unique location and history, Istanbul is a true blend of
+                the East and the West, reflected in its architecture, food, and culture. Spending a week, or even two, is simply not enough to explore this mesmerizing city,
+                as your exploration can range from a ferry tour of the Bosphorous to the bustling night life of Beyoglu. Istanbul simply has no match, and is a city that
+                offers fun and adventure for introverts, extroverts, and everyone in between.
+              </div>
+            </div>
+
+
+          </div>
+    </div>
+    <div id="footer">
+    <p>Helin Yilmaz | University of Southern California 2022</p>
+    </div>
+    </body>
+  </html>

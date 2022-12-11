@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <style>
+    #header{
+      height: 315px;
+      background-image: url("img/books.png");
+      line-height: 370px;
+
+    }
+    #gallery {
+      display: flex;
+      align-items: flex-start;
+      margin-left:auto;
+      margin-right:auto;
+
+    }
+    #navbar{
+      margin-bottom:100px;
+    }
+    .img-container1{
+      width:230px;
+      height:300px;
+      background-color: #bdb0d0 ;
+      border-style:solid;
+      border-color:black;
+      border-width:3px;
+      overflow: hidden;
+      position:relative;
+      margin:15px;
+    }
+
+
+    .img-container2{
+      width:280px;
+      height:350px;
+      background-color: #aa9499 ;
+      border-style:solid;
+      border-color:black;
+      border-width:3px;
+      overflow: hidden;
+      position:relative;
+      margin:15px;
+    }
+
+    .img-container3{
+      width:210px;
+      height:230px;
+      background-color: #bee7a5 ;
+      border-style:solid;
+      border-color:black;
+      border-width:3px;
+      overflow: hidden;
+      position:relative;
+      margin:15px;
+    }
+
+    .img-container4{
+      width:200px;
+      height:270px;
+      background-color: #99c5c4 ;
+      border-style:solid;
+      border-color:black;
+      border-width:3px;
+      overflow: hidden;
+			position:relative;
+      margin:15px;
+    }
+
+    .img-container5{
+      width:200px;
+      height:250px;
+      background-color: #ff694f ;
+      border-style:solid;
+      border-color:black;
+      border-width:3px;
+      overflow: hidden;
+      position:relative;
+      margin:15px;
+    }
+
+    #leftColumn{
+      margin-top:80px;
+        width: 450px;
+
+        background-color: #CBD9BF;
+
+
+      }
+
+    #rightColumn{
+      margin-top:80px;
+        width:450px;
+
+        background-color: #CBD9BF;
+
+      }
+    h2{
+      text-align: center;
+      /* margin-top: 180px; */
+    }
+    .row{
+      display:flex;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    .img-container1 > img {
+			height:300px;
+			width:100%;
+			position: relative;
+		}
+    .img-container2 > img {
+			height:350px;
+			width:100%;
+			position: relative;
+		}.img-container3 > img {
+			height:230px;
+			width:100%;
+			position: relative;
+		}.img-container4 > img {
+			height:270px;
+			width:100%;
+			position: relative;
+		}.img-container5 > img {
+			height:250px;
+			width:100%;
+			position: relative;
+		}
+    .caption{
+			position: absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			text-align:center;
+			padding-top:120px;
+			background-color:rgba(0,0,0,0.7);
+			color:#FFF;
+			visibility: hidden;
+		}
+		.img-container1:hover > .caption{
+			visibility: visible;
+		}
+    .img-container2:hover > .caption{
+      visibility: visible;
+    }
+    .img-container3:hover > .caption{
+      visibility: visible;
+    }
+    .img-container4:hover > .caption{
+      visibility: visible;
+    }
+    .img-container5:hover > .caption{
+      visibility: visible;
+    }
+
+
+
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+  	<div id="header">
+  		<h1>Gallery</h1>
+  	</div>
+    <div id="navbar">
+  		<div id="nav">
+  		<ul>
+  			<li><a href="interestgallery.html">Home</a>
+        <ul>
+          <li><a href="interestgallery.html#writing">Why I Write</a>
+            <li><a href="interestgallery.html#romantic">Romantic Poems</a>
+            <li><a href="interestgallery.html#reflective">Reflective Poems</a>
+          <li><a href="interestgallery.html#favorite">Favorite Poets</a>
+          <li><a href="interestgallery.html#whypoetry">Why Poetry Matters</a></li>
+          </ul>
+  			<li><a href="photogallery.html">Gallery</a></li>
+  		</ul>
+  	</div>
+  	</div>
+
+    <div id="main">
+
+  		<h2>Favorite Books of Poets</h2>
+      <div id="wrapper">
+
+
+  		<div id="gallery">
+        <div id="leftColumn">
+        <div class="row">
+
+
+
+            <div class="img-container1">
+              <img class="img1" src="img/book1.jpeg" alt ="emily dickinson">
+              <div class="caption">The Complete Poems of Emily Dickinson by Emily Dickinson</div>
+            </div>
+
+            <div class="img-container2">
+              <img class="img2" src="img/book2.jpeg" alt ="sappho">
+              <div class="caption">If Not, Winter: Fragments of Sappho by Sappho, Translated by Anne Carson
+              </div>
+            </div>
+            </div>
+
+            <div class="row">
+
+
+            <div class="img-container3">
+              <img class="img3" src="img/book3.jpeg" alt ="rumi">
+              <div class="caption">The Rumi Collection by Rumi , Translated by Kabir Helminski
+              </div>
+            </div>
+
+            <div class="img-container4">
+              <img class="img4" src="img/book4.jpeg" alt ="basho">
+              <div class="caption">On Love and Barley: Haiku of Basho by Basho, Translated by Lucien Stark
+              </div>
+            </div>
+            </div>
+            <div class="row">
+
+              <div class="img-container2">
+                  <img class="img2" src="img/book5.jpeg" alt ="alighieri">
+                  <div class="caption">The Divine Comedy by Dante Alighieri
+                  </div>
+              </div>
+
+            	<div class="img-container5">
+                <img class="img5" src="img/book6.jpeg" alt ="shakespeare">
+                <div class="caption">The Complete Sonnets and Poems by William Shakespeare
+                </div>
+              </div>
+              </div>
+
+            </div>
+
+
+
+            <div id="rightColumn">
+              <div class="row">
+
+              <div class="img-container2">
+                <img class="img2" src="img/book7.jpeg" alt ="walt whitman">
+                <div class="caption">Leaves of Grass by Walt Whitman
+                </div>
+
+              </div>
+              <div class="img-container1">
+                <img class="img1" src="img/book8.jpeg" alt ="john donne">
+                <div class="caption">John Donne’s Poetry by John Donne
+                </div>
+
+              </div>
+              </div>
+              <div class="row">
+              <div class="img-container4">
+                <img class="img4" src="img/book9.jpeg" alt ="phyllis wheatley">
+                <div class="caption">Complete Writings by Phyllis Wheatley
+                </div>
+
+              </div>
+              <div class="img-container3">
+                <img class="img3" src="img/book10.jpeg" alt ="charles baudelaire">
+                <div class="caption">The Flowers of Evil by Charles Baudelaire
+                </div>
+
+              </div>
+              </div>
+              <div class="row">
+                <div class="img-container5">
+                  <img class="img5" src="img/book11.jpeg" alt ="edgar allan poe">
+                  <div class="caption">The Complete Poetry Of Edgar Allan Poe by Edgar Allan Poe
+                  </div>
+
+                </div>
+              	<div class="img-container2">
+                  <img class="img2" src="img/book12.jpeg" alt ="robert frost">
+                  <div class="caption">Robert Frost’s Poems by Robert Frost
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            </div>
+      </div>
+</div>
+
+  <div id="footer">
+  <p>University of Southern California &copy; 2022</p>
+  </div>
+
+  </body>
+  </html>

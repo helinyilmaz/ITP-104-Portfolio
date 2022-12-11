@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+	<style>
+		body {
+			margin: 0px;
+      background-color:#e6faff;
+
+		}
+		h1 {
+			margin: 0px;
+		}
+		h2 {
+      color: #004d00;
+      font-size: 2em;
+      text-align: center;
+		}
+		#header {
+			background-image: url('img/map.png');
+			background-size: cover;
+			background-position: center;
+			color: #004d00;
+			font-size: 1.5em;
+			text-align: center;
+			height: 500px;
+			line-height: 500px;
+
+		}
+		#main {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+
+
+		}
+
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+
+		}
+    .thumbnail {
+      width: 400px;
+      height: auto;
+      margin: 10px;
+
+      opacity:0.5;
+    }
+    .thumbnail:hover {
+      opacity:1.0;
+    }
+    .thumbnail + p {
+      text-align: center;
+      visibility: hidden;
+    }
+    .thumbnail:hover +p {
+			display: block;
+      visibility: visible;
+		}
+    .row{
+      display:flex;
+      margin-right:auto;
+      margin-left:auto;
+    }
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<!-- <div id="header">
+		<h1>Image Gallery of World Cities</h1>
+	</div> -->
+	<div id="main">
+
+		<h2>World Cities</h2>
+
+		<div id="gallery">
+      <div class="row">
+        <div class="column">
+
+			<div class="img-container">
+        <img class="thumbnail" src="img/istanbul.jpeg" alt="Istanbul"><p>Istanbul, Turkey</p></div>
+
+			<div class="img-container">
+        <img class="thumbnail" src="img/athens.jpeg" alt="Athens"><p>Athens, Greece</p></div>
+
+      <div class="img-container">
+        <img class="thumbnail" src="img/cairo.jpeg" alt="Cairo"><p>Cairo, Egypt</p></div>
+
+
+    	<div class="img-container">
+        <img class="thumbnail" src="img/la.jpeg" alt="LA"><p>Los Angeles, CA</p></div>
+
+      <div class="img-containter">
+        <img class="thumbnail" src="img/madrid.jpeg" alt="Madrid"><p>Madrid, Spain</p></div>
+
+      <div class="img-containter">
+        <img class="thumbnail" src="img/sf.jpeg" alt="SF"><p>San Francisco, CA</p></div>
+
+</div>
+</div>
+<div id="row">
+
+<div class="column">
+    	<div class="img-container">
+        <img class="thumbnail" src="img/amsterdam.jpeg" alt="Amsterdam"><p>Amsterdam, Netherlands</p></div>
+
+      <div class="img-containter">
+        <img class="thumbnail" src="img/paris.jpeg" alt="Paris"><p>Paris, France</p></div>
+
+      <div class="img-containter">
+        <img class="thumbnail" src="img/ny.webp" alt="NY"><p>New York, NY</p></div>
+
+</div>
+</div>
+
+</div>
+  	</div>
+
+
+	</div>
+
+
+
+</body>
+</html>

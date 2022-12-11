@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Puzzle</title>
+  <style>
+    body{
+      background-color: #FED8B1;
+    }
+    h1{
+      font-family: Georgia;
+      text-align:center;
+      color: blue;
+      margin-bottom:80px;
+    }
+    .puzzle{
+      margin-left: auto;
+      margin-right: auto;
+      width:800px;
+			position:relative;
+      flex-wrap:wrap;
+      flex-direction: row;
+      display:flex;
+
+    }
+    .puzzle .moveRight{
+    position: relative;
+    right:20px;
+    top: 10px;
+    box-shadow: 10px 6px 6px green;
+
+    }
+    .puzzle .moveLeft{
+      position: relative;
+      left:20px;
+      bottom: 10px;
+      box-shadow: 10px 6px 6px 1px blue;
+    }
+    .puzzle .moveUp{
+      position: relative;
+      bottom:30px;
+      right:20px;
+      box-shadow: 10px 8px 10px red;
+    }
+    .puzzle .moveDown{
+      position: relative;
+      top:10px;
+      left:10px;
+      box-shadow: 10px 10px 10px 10px purple;
+    }
+    .puzzle .move{
+      position: relative;
+      bottom:15px;
+      box-shadow: 10px 7px 7px pink;
+    }
+    .puzzle .move2{
+      position: relative;
+      top:15px;
+      box-shadow: -3px -7px 7px orange;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Istanbul Skyline Image Puzzle</h1>
+    <div class="puzzle">
+      <img class="moveUp" src="img/row-1-column-1.jpg" alt="Top Left">
+      <img class="move" src="img/row-1-column-2.jpg" alt="Top Middle">
+      <img class = "moveLeft" src="img/row-1-column-3.jpg" alt="Top Right">
+      <img src="img/row-2-column-1.jpg" alt="Middle Left">
+      <img src="img/row-2-column-2.jpg" alt="Middle Middle">
+      <img src="img/row-2-column-3.jpg" alt="Middle Right">
+      <img class = "moveRight" src="img/row-3-column-1.jpg" alt="Bottom Left">
+      <img class = "move2" src="img/row-3-column-2.jpg" alt="Bottom Middle">
+      <img class = "moveDown" src="img/row-3-column-3.jpg" alt="Bottom Right">
+      </div>
+  </body>
+  </html>

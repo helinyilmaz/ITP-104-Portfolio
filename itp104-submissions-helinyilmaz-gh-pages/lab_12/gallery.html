@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+	<style>
+		body {
+			margin: 0px;
+      background-color:#e6faff;
+
+		}
+		h1 {
+			margin: 0px;
+		}
+		h2 {
+      color: #004d00;
+      font-size: 2em;
+      text-align: center;
+		}
+		#header {
+			background-image: url('img/map.png');
+			background-size: cover;
+			background-position: center;
+			color: #004d00;
+			font-size: 1.5em;
+			text-align: center;
+			height: 500px;
+			line-height: 500px;
+
+		}
+		#main {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+
+
+		}
+
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+
+		}
+    .thumbnail {
+      width: 400px;
+      height: auto;
+      margin: 10px;
+      opacity:0.5;
+    }
+    .thumbnail:hover {
+      opacity:1.0;
+    }
+    .thumbnail + p {
+      text-align: center;
+      visibility: hidden;
+    }
+    .thumbnail:hover +p {
+			display: block;
+      visibility: visible;
+		}
+    .row{
+      display:flex;
+			justify-content: center;
+    }
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<!-- <div id="header">
+		<h1>Image Gallery of World Cities</h1>
+	</div> -->
+	<div id="main">
+
+		<h2>World Cities</h2>
+
+		<div id="gallery">
+			<div class="row">
+				<div class="column">
+			<div id="main-img" class = "img-container">
+								<img id="sf" class="thumbnail" src="img/sf.jpeg" alt="SF"><p>San Francisco, CA</p></div>
+			<div class="img-container">
+				<img id="ist" class="thumbnail" src="img/istanbul.jpeg" alt="Istanbul"><p>Istanbul, Turkey</p></div>
+
+			<div class="img-container">
+				<img id="athens" class="thumbnail" src="img/athens.jpeg" alt="Athens"><p>Athens, Greece</p></div>
+
+			<div class="img-container">
+				<img id="cairo" class="thumbnail" src="img/cairo.jpeg" alt="Cairo"><p>Cairo, Egypt</p></div>
+
+
+			<div class="img-container">
+				<img id="la" class="thumbnail" src="img/la.jpeg" alt="LA"><p>Los Angeles, CA</p></div>
+
+
+	</div>
+	</div>
+	<div id="row">
+
+	<div class="column">
+		<div class="img-container">
+			<img id="madrid" class="thumbnail" src="img/madrid.jpeg" alt="Madrid"><p>Madrid, Spain</p></div>
+			<div class="img-container">
+				<img id="amst" class="thumbnail" src="img/amsterdam.jpeg" alt="Amsterdam"><p>Amsterdam, Netherlands</p></div>
+
+			<div class="img-container">
+				<img id="paris" class="thumbnail" src="img/paris.jpeg" alt="Paris"><p>Paris, France</p></div>
+
+			<div class="img-container">
+				<img id="ny" class="thumbnail" src="img/ny.webp" alt="NY"><p>New York, NY</p></div>
+
+
+
+	</div>
+	</div>
+		</div>
+			</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<script>
+$('#ist').click(function(){
+	$('#ist').css('border-style', 'solid');
+	$('#ist').css('border-color', 'green');
+	$('#ist').css('border-width', '5px');
+	$('#ist').css('opacity', '1.0');
+		$('#paris').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+$('#la').click(function(){
+	$('#la').css('border-style', 'solid');
+	$('#la').css('border-color', 'green');
+	$('#la').css('border-width', '5px');
+	$('#la').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+		$('#paris').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+
+})
+
+$('#ny').click(function(){
+	$('#ny').css('border-style', 'solid');
+	$('#ny').css('border-color', 'green');
+	$('#ny').css('border-width', '5px');
+	$('#ny').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+		$('#paris').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+$('#amst').click(function(){
+	$('#amst').css('border-style', 'solid');
+	$('#amst').css('border-color', 'green');
+	$('#amst').css('border-width', '5px');
+	$('#amst').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+		$('#paris').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+$('#athens').click(function(){
+	$('#athens').css('border-style', 'solid');
+	$('#athens').css('border-color', 'green');
+	$('#athens').css('border-width', '5px');
+	$('#athens').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+		$('#paris').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+$('#cairo').click(function(){
+	$('#cairo').css('border-style', 'solid');
+	$('#cairo').css('border-color', 'green');
+	$('#cairo').css('border-width', '5px');
+	$('#cairo').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+		$('#paris').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+$('#madrid').click(function(){
+	$('#madrid').css('border-style', 'solid');
+	$('#madrid').css('border-color', 'green');
+	$('#madrid').css('border-width', '5px');
+	$('#madrid').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+		$('#paris').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+$('#sf').click(function(){
+	$('#sf').css('border-style', 'solid');
+	$('#sf').css('border-color', 'green');
+	$('#sf').css('border-width', '5px');
+	$('#sf').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+		$('#paris').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+$('#paris').click(function(){
+	$('#paris').css('border-style', 'solid');
+	$('#paris').css('border-color', 'green');
+	$('#paris').css('border-width', '5px');
+	$('#paris').css('opacity', '1.0');
+	$('#ist').css('border-style', 'none');
+			$('#sf').css('border-style', 'none');
+				$('#madrid').css('border-style', 'none');
+					$('#cairo').css('border-style', 'none');
+						$('#athens').css('border-style', 'none');
+							$('#amst').css('border-style', 'none');
+								$('#ny').css('border-style', 'none');
+									$('#la').css('border-style', 'none');
+})
+
+
+</script>
+
+
+
+</body>
+</html>

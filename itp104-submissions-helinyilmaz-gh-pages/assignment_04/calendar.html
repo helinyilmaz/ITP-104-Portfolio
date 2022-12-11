@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar Page</title>
+	<style>
+    body{
+      margin:0px;
+      background-color:#f2e6ff;
+    }
+		p{
+			color:#f7e6ff;
+			text-align:center;
+			background-color: black;
+		}
+		h1{
+			margin:0px;
+		}
+    #header{
+      background-image: url("img/tulips.jpeg");
+      background-size: cover;
+      text-align: center;
+      background-position: center;
+      color: #ffffff;
+      font-size: 3.5em;
+      height: 500px;
+      text-shadow: 0px 0px 10px #cc0099;
+      line-height: 500px;
+      margin-bottom:10px;
+      margin-top:0px;
+
+    }
+
+    #main{
+      width: 980px;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+
+    #calendar{
+      width: 900px;
+			height:400px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+
+    th{
+			border: 1px solid #66004d;
+			border-bottom:3px solid #66004d;
+			padding:10px 0px;
+		}
+		td{
+			border:1px solid #66004d;
+			/* padding:10px 20px; */
+      width:150px;
+      height:100px;
+      vertical-align:text-top;
+      text-align:right;
+
+    }
+    table{
+      border-collapse: collapse;
+      text-align: center;
+    }
+    .passed{
+      color:#ff1aff;
+    }
+
+    #patrick{
+      background-image: url("img/leperchaun.jpeg");
+      background-size:120px;
+    }
+
+    #birthday{
+      background-image: url("img/cake.jpeg");
+      background-size:120px;
+    }
+
+    #spring{
+      background-image: url("img/flower.png");
+      background-size:110px;
+
+    }
+    #water{
+      background-image: url("img/water.png");
+      background-size:56px;
+    }
+
+    .uniqueDate{
+      color:#00bfff;
+      text-shadow: 0px 0px 10px #b3ecff;
+      font-weight:bold;
+
+    }
+    </style>
+    </head>
+
+    <body>
+      <div id="header">
+    		<h1>March 2023</h1>
+    	</div>
+      <div id="main">
+        <table id="calendar">
+          <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+
+          <tr>
+            <td class="passed">26</td>
+            <td class="passed">27</td>
+            <td class="passed">28</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td id="birthday" class="uniqueDate">10
+						<p>Helin's Birthday</p>
+						</td>
+
+            <td>11</td>
+
+          </tr>
+
+          <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td id="patrick" class="uniqueDate">17
+						<p>St.Patrick's Day</p>
+						</td>
+
+            <td>18</td>
+
+          </tr>
+
+          <tr>
+            <td>19</td>
+            <td id="spring" class="uniqueDate">20
+							<p>Spring Equinox</p>
+						</td>
+
+            <td>21</td>
+            <td id="water" class="uniqueDate">22
+						<p>World Water Day</p>
+						</td>
+
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+
+          </tr>
+
+          <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td class="passed">1</td>
+          </tr>
+        </table>
+
+
+        </div>
+
+    </body>
+    </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sites & Activities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+
+  <meta name="keywords" content="sites, activities, Istanbul, Ortakoy, Bosphorus, tour, fortress, museums">
+  <meta name="description" content="A webpage that suggests various sites to visit in Istanbul, Turkey, as well as activities to do during the day time or night.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Itim&family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Itim&family=Kalam:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <style>
+  #map { height: 400px; }
+  img{
+    height:auto;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header{
+    background-image: url('img/sitesheader.jpeg');
+  }
+  h1{
+    color:#165668;
+    text-shadow: 3px 3px #BCC6CC;
+    text-align:left;
+    text-indent:70px;
+  }
+  h2{
+    text-align: center;
+  }
+
+  #day{
+    width:50%;
+    background-color: #aac2d4;
+    text-align:center;
+  }
+
+  #night{
+    width:50%;
+    background-color: #165668;
+    color:white;
+    text-align:center;
+
+  }
+  #map{
+    width:100%;
+  }
+
+  #wrapper2{
+    display: flex;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .writing{
+    padding-left:30px;
+  }
+  #day a:link, a:visited {
+  background-color: #37505C;
+  color: white;
+  padding: 14px 25px;
+  /* margin: 0 50px 10px 0; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+}
+
+#day a:hover, a:active {
+  background-color: #9F7465ff;
+}
+#night a:link, a:visited {
+background-color: #a3c2c2;
+color: black;
+padding: 14px 25px;
+margin: 0 0px 0px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: 'Raleway', sans-serif;
+}
+
+#night a:hover, a:active {
+background-color: #37505C;
+color:white;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="navbar">
+      <div id="nav">
+        <ul>
+          <li><a href="home.html">About</a>
+          <li><a href="history.html">History</a>
+
+          <li><a href="food.html">Food</a>
+            <ul>
+              <li><a href="food.html#breakfast">Breakfast</a>
+                <li><a href="food.html#lunch">Lunch</a>
+            <li><a href="food.html#dinner">Dinner</a>
+          </ul>
+
+          <li><a href="sites.html">Sites</a>
+            <ul>
+              <li><a href= "#day">Day</a>
+              <li><a href= "#night">Night</a>
+            </ul>
+
+          <li><a href="stays.html">Stays</a>
+          <ul>
+            <li><a href="stays.html#asia">Asia</a>
+            <li><a href="stays.html#europe">Europe</a></li>
+          </ul>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div id="header">
+    <div class="typewriter">
+  <h1>SITES</h1>
+</div>
+</div>
+
+<div id="main">
+  <div id="wrapper2">
+  <div id="day">
+    <h2>Day</h2>
+    <div class="writing">
+      Istanbul is the perfect place to take uniquely beautiful photographs that will liven up your Instagram feed. Visiting and taking pictures at these sites is
+      an unmatched experience.
+    </div>
+    <h3>Go on a Bosphorous Tour</h3>
+    <img src="img/tour.jpeg" alt="ship on water">
+    <h3>Visit the Rumeli Fortress</h3>
+    <img src="img/rumeli.jpeg" alt="rumeli fortress">
+    <h3>Visit the Blue Mosque, Hagia Sophia, and Basilica Cistern</h3>
+    <img src="img/basil.jpeg" alt="basilica cistern">
+
+    <div class = "writing">
+      These sites are all in walking distance of each other and are best when visited during the day, especially morning time because there will be fewer crowds.
+    </div>
+  </div>
+
+  <div id="night">
+    <h2>Night</h2>
+    <div class="writing">
+      Istanbul is just as, if not more, beautiful during the night than it is during the day. You never run out of new spectacles to see, or old history to learn. This city never sleeps!
+    </div>
+    <h3>Visit a Rooftop Restaurant/Bar</h3>
+    <img src="img/roof.jpeg" alt="rooftop Restaurant">
+
+    <h3>Take a Boshphorous Night Cruise with Dinner</h3>
+    <img src="img/boat.jpeg" alt="boat night tour">
+    <div>
+    <a href="https://www.tripadvisor.com/Attraction_Products-g293974-zfg11865-a_contentId.42578025063+713928142-Istanbul.html" target="_blank">Book a Tour</a>
+  </div>
+  <h3>Enjoy Live Music in Ortakoy</h3>
+  <img src="img/livemusic.jpeg" alt="night live music">
+  <div class="writing">
+    Most of the fun night activities are in the European side by the water.
+  </div>
+  </div>
+  </div>
+  <div id="map">
+  </div>
+
+
+
+</div>
+<div id="footer">
+<p>Helin Yilmaz | University of Southern California 2022</p>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script>
+var map = L.map('map').setView([41.0082, 28.9784], 13);</script>
+<script>
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+</script>
+</div>
+</body>
+</html>

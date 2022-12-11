@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form page</title>
+	<style>
+		body {
+			margin: 0px;
+      background-color: #e6e6ff;
+		}
+    #main{
+
+      width: 750px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+		h1 {
+			margin: 30px;
+      margin-bottom:50px;
+      text-align:center;
+
+		}
+		.form-row{
+      margin:10px 0px 20px 10px;
+			display: flex;
+		}
+
+		.form-column{
+			width: 250px;
+		}
+		button{
+			padding:10px 20px;
+			border-radius:10px;
+
+		}
+
+		#submit-btn{
+			background-color: #4d4dff;
+			color:#FFF;
+		}
+
+    #reset-btn{
+      background-color: #e0e0eb;
+    }
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Request an Appointment Form</h1>
+	</div>
+  <div id="main">
+
+		<form action="confirmation.html">
+			<div class="form-row">
+				<div class="form-column"<label for="name-id">First Name:</label></div>
+				<input type="text" id="name-id" placeholder="Helin">
+	   </div>
+
+     <div class="form-row">
+       <div class="form-column"<label for="lastname-id">Last Name:</label></div>
+       <input type="text" id="lastname-id" placeholder="Yilmaz">
+    </div>
+
+    <div class="form-row">
+      <div class="form-column"<label for="dob">Date of Birth:</label></div>
+      <input type="text" id="dob" placeholder="mm/dd/yyyy">
+   </div>
+
+   <div class="form-row">
+     <div class="form-column"<label for="gender">Gender:</label></div>
+     <select id="gender">
+       <option>Female</option>
+       <option>Male</option>
+       <option>Other</option>
+       <option>Prefer not to disclose</option>
+     </select>
+   </div>
+
+    <div class="form-row">
+      <div class="form-column"<label for="number-id">Phone Number:</label></div>
+      <input type="text" id="number-id" placeholder="(xxx) xxx-xxxx">
+    </div>
+		 <div class="form-row">
+			<div class="form-column"<label for="email-id">Email:</label></div>
+			<input type="email" id="email-id" placeholder="hnyilmaz@usc.edu">
+		</div>
+
+
+
+		<div class="form-row">
+			<div class="form-column"<label>Are you currently insured?</label></div>
+			<label>
+				<input type="radio" name="insurance">Yes
+			</label>
+
+			<label>
+				<input type="radio" name="insurance">No
+			</label>
+
+      <label>
+				<input type="radio" name="insurance">Unknown
+			</label>
+		</div>
+
+		<div class="form-row">
+			<div class="form-column"<label>Preexisting Conditions:</label></div>
+
+			<label>
+				<input type="checkbox">Allergies
+			</label>
+			<label>
+				<input type="checkbox">Diabetes
+			</label>
+      <label>
+        <input type="checkbox">High Cholesterol
+      </label>
+      <label>
+        <input type="checkbox">Kidney Failure
+      </label>
+      <label>
+        <input type="checkbox">Heart Disease
+      </label>
+      <label>
+        <input type="checkbox">Cancer
+      </label>
+      <label>
+        <input type="checkbox">None
+      </label>
+		</div>
+
+    <div class="form-row">
+      <div class="form-column"<label>Have you visited us before?</label></div>
+      <label>
+        <input type="radio" name="visit">Yes
+      </label>
+
+      <label>
+        <input type="radio" name="visit">No
+      </label>
+
+      <label>
+        <input type="radio" name="visit">Unknown
+      </label>
+    </div>
+
+    <div class="form-row">
+      <div class="form-column"<label for="date">Appointment Date Requested:</label></div>
+      <select id="date">
+        <option>9/24/2022</option>
+        <option>9/26/2022</option>
+        <option>10/03/2022</option>
+        <option>10/05/2022</option>
+        <option>10/07/2022</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+			<div class="form-column"<label>Select Time(s):</label></div>
+
+			<label>
+				<input type="checkbox">8:00AM
+			</label>
+      <label>
+				<input type="checkbox">8:30AM
+			</label>
+      <label>
+				<input type="checkbox">9:00AM
+			</label>
+      <label>
+				<input type="checkbox">9:30AM
+			</label>
+      <label>
+				<input type="checkbox">10:00AM
+			</label>
+      <label>
+				<input type="checkbox">10:30AM
+			</label>
+      <label>
+				<input type="checkbox">11:00AM
+			</label>
+      </div>
+
+		<div class="form-row">
+			<div class="form-column"<label for="comment-id">Questions or Concerns:</label></div>
+
+			<textarea id="comment-id" placeholder="Please inform us of reason for visiting and share any questions you may have before your visit"></textarea>
+		</div>
+
+    <div class="form-row">
+      <div class="form-column"<label for="terms"></label></div>
+			<label>
+				<input type="checkbox">I accept terms & conditions.
+			</label>
+      </div>
+
+      <div class="form-row">
+        <div class="form-column"<label for="buttons"></label></div>
+			<label><button type="submit" id="submit-btn">Submit</button></label></div>
+      <div class="form-row">
+        <div class="form-column"<label for="buttons"></label></div>
+      <label><button type="reset" id="reset-btn">Clear</button></label></div>
+
+
+		</form>
+
+
+
+	</div>
+
+
+
+</body>
+</html>
